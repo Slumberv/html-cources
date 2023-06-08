@@ -1,0 +1,180 @@
+:root {
+    --hover-color: #2196F3;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.mail,
+.phone {
+    color: #757575;
+    font-size: 14px;
+}
+
+.main-links li a {
+    color: #212121;
+    font-size: 14px;
+}
+
+.mail:hover,
+.phone:hover {
+    color: var(--hover-color);
+    transition: 0.4s;
+}
+
+.main-links li a:hover {
+    color: var(--hover-color);
+    transition: 0.4s;
+}
+
+.hero {
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.first {
+    background: #2F303A
+}
+
+.button {
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    padding: 10px 32px;
+}
+
+.aboutus li h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+.aboutus li p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.second {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.pictures li img {
+    width: 370px;
+}
+
+.third {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.pictures-team {
+    width: 270px;
+}
+
+.names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+
+}
+
+.button,
+.profession,
+.third,
+.second,
+.aboutus,
+.first,
+.names {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.main-nav {
+    display: flex;
+    height: 80px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+}
+.main-links,
+.second-links {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-link {
+    margin-left: 215px;
+    margin-left: 93px;
+}
+header {
+    height: 80px;
+}
+.main-links li {
+margin-right: 50px;
+}
+ 
