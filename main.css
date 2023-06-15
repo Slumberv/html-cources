@@ -44,7 +44,9 @@ ul {
 }
 
 .first {
-    background: #2F303A
+    background: #2F303A;
+    padding: 200px 452px 280px;
+
 }
 
 .button {
@@ -64,6 +66,7 @@ ul {
 
     color: #FFFFFF;
     padding: 10px 32px;
+    margin: 30px auto 0;
 }
 
 .aboutus li h3 {
@@ -88,6 +91,7 @@ ul {
 }
 
 .second {
+    margin: auto;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -99,6 +103,9 @@ ul {
 
 .pictures li img {
     width: 370px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .third {
@@ -109,10 +116,6 @@ ul {
     letter-spacing: 0.03em;
 
     color: #212121;
-}
-
-.pictures-team {
-    width: 270px;
 }
 
 .names {
@@ -147,19 +150,20 @@ ul {
 .aboutus,
 .first,
 .names {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
 }
 
-.main-nav {
+.main_nav {
     display: flex;
-    height: 80px;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 ul {
     padding: 0;
     margin: 0;
-    list-style: 0;
+    list-style: none;
 }
 
 .main-links,
@@ -171,15 +175,75 @@ ul {
 }
 
 .logo-link {
+    display: flex;
+    align-items: center;
     margin-left: 215px;
-    margin-left: 93px;
+    margin-right: 93px;
 }
 
 header {
     height: 80px;
 }
 
-.main-links li {
+.main-links li:not(:last-child) {
     margin-right: 50px;
-    margin-left: 50px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-links {
+    width: 294px;
+    margin-right: 331px;
+}
+
+.second-links li:nth-child(1) {
+    margin-right:50px;
+}
+
+.section2 {
+    margin-top: 94px;
+}
+
+.aboutus {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 94px;
+}
+
+.aboutus li:not(:last-child) {
+    margin-right: 50px;
+}
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 50px 0 94px;
+}
+.team {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+}
+.third {
+    margin: auto;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+.pictures-team {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1170px;
+}
+.main-links {
+    margin: auto;
 }
