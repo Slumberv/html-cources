@@ -103,9 +103,6 @@ ul {
 
 .pictures li img {
     width: 370px;
-    display: flex;
-    justify-content: space-between;
-
 }
 
 .third {
@@ -199,7 +196,7 @@ body {
 }
 
 .second-links li:nth-child(1) {
-    margin-right:50px;
+    margin-right: 50px;
 }
 
 .section2 {
@@ -216,6 +213,7 @@ body {
 .aboutus li:not(:last-child) {
     margin-right: 50px;
 }
+
 .pictures {
     display: flex;
     justify-content: space-between;
@@ -223,10 +221,12 @@ body {
     margin: 0 auto;
     padding: 50px 0 94px;
 }
+
 .team {
     background-color: #F5F4FA;
     padding-top: 94px;
 }
+
 .third {
     margin: auto;
     padding-bottom: 50px;
@@ -238,12 +238,81 @@ body {
 
     color: #212121;
 }
+
 .pictures-team {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 1170px;
 }
-.main-links {
-    margin: auto;
+
+.footer {
+    background: #2F303A;
+    width: 1600px;
+    height: 252px;
+    padding-top: 94px;
+    flex-shrink: 0;
+}
+
+.address {
+    color: #FFFFFF;
+    padding-left: 215px;
+    padding-top: 20px;
+}
+
+.logo-link-footer {
+    padding-top: 60px;
+    margin-left: 215px;
+}
+
+.second-links-footer {
+    padding-left: 215px;
+}
+
+.buttons {
+    width: 611px;
+    padding: 94px 494px 50px 495px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.button-all,
+.button-websites,
+.button-apps,
+.button-design,
+.button-marketing {
+    border-radius: 4px;
+    background: #F5F4FA;
+    color: #212121;
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+
+}
+
+.button-all {
+    border-radius: 4px;
+    background: #2196F3;
+    /* shadow-middle */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.all-options-first,
+.all-options-second,
+.all-options-third {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+}
+
+.mail-footer,
+.phone-footer {
+    color: #757575;
+    font-size: 14px;
+    padding-top: 9px;
 }
