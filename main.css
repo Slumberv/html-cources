@@ -22,10 +22,13 @@ ul {
     font-size: 14px;
 }
 
-.mail:hover,
-.phone:hover {
+.second-links li:hover a {
     color: var(--hover-color);
     transition: 0.4s;
+}
+
+.second-links li:hover .icon-phone {
+    fill: var(--hover-color);
 }
 
 .main-links li a:hover {
@@ -244,6 +247,10 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     width: 1170px;
+}
+.companies {
+        background-color: #F5F4FA;
+        padding-top: 94px;
 }
 
 .footer {
