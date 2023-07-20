@@ -47,9 +47,10 @@ ul {
 }
 
 .first {
-    background: #2F303A;
     padding: 200px 452px 280px;
-
+    background-image: url(./img/fisrt_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .button {
@@ -160,6 +161,17 @@ ul {
     height: 100%;
 }
 
+.main_nav svg {
+    width: 16px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.main_nav svg:hover {
+    color: var(--hover-color);
+    transition: 0.4s;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -249,8 +261,8 @@ body {
     width: 1170px;
 }
 .companies {
-        background-color: #F5F4FA;
-        padding-top: 94px;
+    background-color: #F5F4FA;
+    padding-top: 94px;
 }
 
 .footer {
@@ -320,4 +332,47 @@ body {
     font-size: 14px;
     padding-top: 9px;
 }
-.contact-item
+
+.icons-section2 {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    padding: 25px 100px;
+}
+
+.icon-media {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #AFB1B8;
+}
+.icon-company {
+width: 106px;
+height: 60px;
+flex-shrink: 0;
+}
+.companies svg{
+    display: flex;
+
+
+}
+.companies-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1170px;
+}
+.team-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 206px;
+}
+.names-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:#FFFFFF
+}
