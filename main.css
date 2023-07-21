@@ -47,9 +47,9 @@ ul {
 }
 
 .first {
-    padding: 200px 452px 280px;
+    padding: 200px 452px;
     background-image: url(./img/fisrt_background.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
