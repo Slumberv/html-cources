@@ -148,7 +148,7 @@ ul {
 }
 
 .button,
-.profession,
+.button-footer .profession,
 .third,
 .second,
 .aboutus,
@@ -331,6 +331,58 @@ body {
     padding-bottom: 94px;
 }
 
+.all-options-first li {
+    overflow: hidden;
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    ;
+}
+
+.all-options-first li div:not(:first-child) {
+    padding: 24px;
+}
+
+.img-thumb {
+    position: relative;
+}
+
+.thumb {
+    width: 370px;
+    height: 294px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #2196F3;
+    opacity: 1;
+    transform: translateY(100%);
+    transition: transform 0.2s linear;
+
+}
+
+.thumb p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    width: 322px;
+    height: 168px;
+
+}
+
+.img-thumb:hover .thumb {
+    transform: translateY(0);
+}
+
+.text-div {
+    position: relative;
+    z-index: 5;
+    background: white;
+}
+
 .mail-footer,
 .phone-footer {
     color: #757575;
@@ -349,7 +401,6 @@ body {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    color: #AFB1B8;
 }
 
 .icon-company {
@@ -359,6 +410,13 @@ body {
     padding: 16px 32px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    transition: border 250ms, fill 250ms;
+}
+
+.icon-company:hover {
+    border-color: #2196F3;
+    fill: #2196F3;
 }
 
 .companies svg {
@@ -404,35 +462,259 @@ li .overlay {
     display: flex;
 }
 
-.footer-item div:last-child {
-    margin-left: 70px;
+.footer-second {
+    margin-left: 93px;
 }
+
+.footer-third {
+    margin-left: 93px;
+}
+
+
 .contact-icon {
     margin-right: 10px;
 }
+
+.team-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 206px;
+}
+
+.team-icons li {
+    background-color: rgba(255, 255, 255, 0.10);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.team-icons li:hover {
+    background-color: #2196F3;
+}
+
+.team-icons svg {
+    fill: #AFB1B8;
+}
+
+.team-icons li:hover svg {
+    fill: #FFFFFF;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 206px;
+}
+
+.footer-icons li {
+    background-color: rgba(255, 255, 255, 0.10);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.footer-icons li:hover {
+    background-color: #2196F3;
+}
+
+.footer-icons svg {
+    fill: #FFFFFF;
+}
+
+.button-footer {
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+    margin-left: 12px;
+}
+
+.button-footer {
+    width: 200px;
+}
+
+.button-footer::after {
+    content: '';
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url("./icomoon/icon-telegram.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-form-button {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.team-card {
+    background-color: #FFF;
+    padding: 30px 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.team-card h3 {
+    margin-top: 0;
+}
+
+.team img {
+    display: block;
+}
+
+.pictures-team>li {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 165, 0, 0.5);
-  }
-  
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .modal {
+    background-color: rgba(117, 117, 117, 0.295);
+}
+
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
-  
-    min-height: 300px;
-    min-width: 400px;
-    padding: 15px;
-  
-    background-color: #fff;
-  }
+    width: 528px;
+    height: 581px;
+    background-color: white;
+    padding: 20px;
+}
+
+.button-close-modal {
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    background: none;
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.img-modal-close {
+    width: 18px;
+    height: 16px;
+    top: 14px;
+    right: 14px;
+    background: none;
+    position: absolute;
+}
+
+
+
+.form-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 448px;
+    height: 501px;
+    background-color: white;
+    padding: 20px;
+}
+
+.form-modal p {
+    margin-bottom: 4px;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+
+}
+
+.textarea {
+    width: 448px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    color: rgba(117, 117, 117, 0.50);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
+
+.textarea textarea {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    width: 416px;
+    height: 96px;
+    flex-shrink: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+}
+
+.form-label {
+    padding-bottom: 4px;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+}
+
+.form-label img {
+    width: 18px;
+    position: absolute;
+    height: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+
+}
+
+.input-div {
+    position: relative;
+    display: block;
+}
+
+.input-div input {
+    width: calc(100% - 42px);
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    padding-left: 42px;
+}
