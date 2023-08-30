@@ -348,12 +348,13 @@ body {
 }
 
 .thumb {
+    padding-top: 4px;
     width: 370px;
     height: 294px;
     position: absolute;
     top: 0;
     bottom: 0;
-    background: #2196F3;
+    background: #2196F3E5;
     opacity: 1;
     transform: translateY(100%);
     transition: transform 0.2s linear;
@@ -361,6 +362,7 @@ body {
 }
 
 .thumb p {
+    padding: 63px 24px;
     color: #FFF;
     font-family: Roboto;
     font-size: 18px;
@@ -377,11 +379,12 @@ body {
     transform: translateY(0);
 }
 
-.text-div {
+.text-thumb {
     position: relative;
-    z-index: 5;
     background: white;
 }
+
+
 
 .mail-footer,
 .phone-footer {
@@ -534,6 +537,8 @@ li .overlay {
 }
 
 .button-footer {
+    width: 200px;
+    height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -544,6 +549,27 @@ li .overlay {
 
     color: #FFFFFF;
     margin-left: 12px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.96px;
+    color: #FFF;
+}
+
+.button-footer text {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.96px;
 }
 
 .button-footer {
@@ -613,6 +639,10 @@ li .overlay {
 }
 
 .button-close-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     top: 8px;
@@ -623,14 +653,7 @@ li .overlay {
     border-radius: 50%;
 }
 
-.img-modal-close {
-    width: 18px;
-    height: 16px;
-    top: 14px;
-    right: 14px;
-    background: none;
-    position: absolute;
-}
+
 
 
 
@@ -671,6 +694,7 @@ li .overlay {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+    resize: none;
 }
 
 .textarea textarea {
@@ -696,7 +720,7 @@ li .overlay {
     letter-spacing: 0.12px;
 }
 
-.form-label img {
+.form-label div img {
     width: 18px;
     position: absolute;
     height: 18px;
@@ -717,4 +741,83 @@ li .overlay {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     padding-left: 42px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label .checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox-label .checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #212121;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.checkbox-label .checkbox:checked+.checkbox-icon {
+    border-color: transparent;
+    background-color: #2196F3;
+    background-image: url('./icons_3/yes.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+.checkbox-text {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+
+
+.img-modal-close {
+    width: 18px;
+    height: 18px;
+}
+
+.text-thumb {
+    z-index: 2;
+}
+
+.footer-form-input {
+    width: 358px;
+    height: 50px;
+    flex-shrink: 0;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    letter-spacing: 0.48px;
+}
+
+
+.label-footer {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    letter-spacing: 0.48px;
 }

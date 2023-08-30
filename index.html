@@ -136,9 +136,6 @@
                             </li>
                         </ul>
                     </div>
-
-
-
                 </li>
                 <li>
                     <img src="./img/olga.png" alt="">
@@ -318,8 +315,9 @@
                 <h3 class="names-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
                 <div class="footer-form-button">
                     <form class="main-form">
-                        <label for="email"></label>
-                        <input type="text" name="email" id="email" autofocus placeholder="Email">
+                        <label class="label-footer" for="email"></label>
+                        <input class="footer-form-input" type="text" name="email" id="email" autofocus
+                            placeholder="Email">
                     </form>
                     <button class="button-footer">Подписаться</button>
                 </div>
@@ -334,33 +332,40 @@
                     <label class="form-label">Имя
                         <div class="input-div">
                             <input type="text">
-                            <img src="./icons 3/person-black-18dp 1.svg" alt="">
+                            <img src="./icons_3/person-black-18dp 1.svg" alt="">
                         </div>
                     </label>
                     <label class="form-label">Телефон
                         <div class="input-div">
                             <input type="tel">
-                            <img src="./icons 3/phone-black-18dp 1.svg" alt="">
+                            <img src="./icons_3/phone-black-18dp 1.svg" alt="">
                         </div>
                     </label>
                     <label class="form-label">Почта
                         <div class="input-div">
                             <input type="text">
-                            <img src="./icons 3/email-black-18dp 1.svg">
+                            <img src="./icons_3/email-black-18dp 1.svg">
                         </div>
                     </label>
                     <label class="form-label">Комментарий
                         <div>
                             <textarea class="textarea" name="Комментарий" id="Комментарий" cols="30"
                                 rows="10">Введите текст</textarea>
+                            <label>
+                                <input type="checkbox" class="form-checkbox" name="rules" value="agreed">
+                                <span class="checkbox-icon"></span>
+                                <span class="checkbox-text"> Соглашаюсь с рассылкой и принимаю <a href="/terms">Условия договора</a></span>
+
+                            </label>
 
                             <button class="button">Отправить</button>
+                        </div>
                 </form>
-
+                <button class="button-close-modal" data-close-modal>
+                    <img class="img-modal-close" src="./icons_3/close-black-18dp (2) 1.svg" alt="">
+                </button>
             </div>
-            <button class="button-close-modal">
-                <img class="img-modal-close" src="./icons 3/close-black-18dp (2) 1.svg" alt="">
-            </button>
+
         </div>
 
     </div>
@@ -382,7 +387,7 @@
         function logBackdropClick() {
             console.log("Это клик в бекдроп");
             refs.backdrop.classList.add("is-hidden");
-            refs.backdrop.querySelector(".modal").classList.add("is-hidden");
+
         }
 
         refs.backdrop.querySelector(".modal").addEventListener("click", function (event) {
