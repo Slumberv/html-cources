@@ -1,0 +1,131 @@
+header {
+
+    .main_nav {
+        display: flex;
+        @media only screen and (min-width: 0) and (max-width: 783px) {
+            padding: 10px 15px;
+            display: block;
+        }
+    }
+
+    .logo-mobile {
+        @media only screen and (min-width: 0) and (max-width: 783px) {
+           display: flex;
+           justify-content: space-between;
+        }
+    }
+
+    .main-links {
+        display: flex;
+    }
+.contact-item, 
+.contact-icon {
+    display: flex;
+}
+.contact-item,
+.contact-icon,
+.main-links, 
+.second-links {
+    @media only screen and (min-width: 0) and (max-width: 783px) {
+        display: none;
+     }
+}
+.burger-menu {
+    display: none;
+}
+}
+
+
+
+
+
+/*     NAVIGATION */
+/*     .main_nav {
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .main_nav svg {
+        width: 16px;
+        height: 12px;
+        flex-shrink: 0;
+    } */
+
+/*     .main_nav svg:hover {
+        color: var(--hover-color);
+        transition: 0.4s;
+    }
+
+    .main-links li a {
+        color: #212121;
+        font-size: 14px;
+    }
+
+    .main-links li a:hover {
+        color: var(--hover-color);
+        transition: 0.4s;
+    }
+
+    .main-links,
+    .second-links {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-links li:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .main-links {
+        width: 294px;
+        margin-right: 331px;
+    }
+
+    .main-links li a {
+        color: #212121;
+        font-size: 14px;
+    }
+
+    .main-links li a:hover {
+        color: var(--hover-color);
+        transition: 0.4s;
+    }
+
+    .second-links li:hover a {
+        color: var(--hover-color);
+        transition: 0.4s;
+    }
+ */
+/*     .second-links li:hover .icon-phone {
+        fill: var(--hover-color);
+    }
+
+    .second-links li:nth-child(1) {
+        margin-right: 50px;
+    }
+
+    .contact-icon {
+        fill: #212121;
+    }
+
+    .contact-icon {
+        margin-right: 10px;
+    }
+
+    .mail,
+    .phone {
+        color: #757575;
+        font-size: 14px;
+    }
+ */
+/*     LOGO */
+/*  .logo-link {
+        display: flex;
+        align-items: center;
+        margin-left: 215px;
+        margin-right: 93px;
+    }
+ */

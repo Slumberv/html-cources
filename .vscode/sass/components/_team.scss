@@ -1,0 +1,128 @@
+.team {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+}
+
+/* TEXT */
+.third {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.third {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.third {
+    margin: auto;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+/*     LIST */
+.pictures-team {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.pictures-team>li {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-card {
+    background-color: #FFF;
+    padding: 30px 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.team-card h3 {
+    margin-top: 0;
+}
+
+.team img {
+    display: block;
+}
+
+.names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.names {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.profession {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.team-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 206px;
+}
+
+.team-icons li {
+    background-color: rgba(255, 255, 255, 0.10);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.team-icons li:hover {
+    background-color: #2196F3;
+}
+
+.team-icons svg {
+    fill: #AFB1B8;
+}
+
+.team-icons li:hover svg {
+    fill: #FFFFFF;
+}
+
+.icon-media {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
