@@ -1,0 +1,209 @@
+.team {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+        padding: 60px 0 60px;
+    }
+
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+        padding: 60px 0 60px;
+    }
+}
+
+/* TEXT */
+.third {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.84px;
+    }
+
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.84px;
+    }
+}
+
+.third {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.third {
+    margin: auto;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+/*     LIST */
+.pictures-team {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        flex-direction: row;
+    }
+}
+
+
+
+.pictures-team li {
+padding: 0px 30px 0px 30px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+        margin: 30px 15px;
+    }
+
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 354px;
+        padding: 15px;
+    }
+    }
+
+
+
+.team-card {
+    background-color: #FFF;
+    padding: 30px 0;
+    border-radius: 0 0 4px 4px;
+}
+
+
+.team-card h3 {
+    margin-top: 0;
+}
+
+.team img {
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+        flex-shrink: 0;
+    }
+}
+
+.names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.names {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.profession {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.team-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+        justify-content: center;
+    }
+    @media only screen and (min-width: 764px) and (max-width: 1023px) {
+        justify-content: center;
+    }
+
+}
+
+.team-icons li {
+    background-color: rgba(255, 255, 255, 0.10);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 400ms;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+.team-icons li:hover {
+    background-color: #2196F3;
+}
+
+.team-icons svg {
+    fill: #AFB1B8;
+}
+
+.team-icons li:hover svg {
+    fill: #FFFFFF;
+}
+
+.icon-media {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}

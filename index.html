@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.scss">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                 </a>
                 <button class="burger-menu">1234</button>
             </div>
-    
+
             <ul class="main-links">
                 <li>
                     <a href="./studio.html">Студия</a>
@@ -41,7 +41,7 @@
                     </svg>
                     <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="contact-icon">
+                <li class="contact-item">
                     <svg class="icon-phone">
                         <use href="./icomoon/symbol-defs.svg#icon-phone"></use>
                     </svg>
@@ -52,8 +52,10 @@
     </header>
     <main>
         <section class="first">
+            <div class="first-text">
             <h1 class="hero">Эффективные решения </br> для вашего бизнеса</h1>
             <button class="button" data-open-modal>Заказать услугу</button>
+        </div>
         </section>
         <section class="section2">
             <ul class="aboutus">
@@ -112,7 +114,13 @@
             <h2 class="third">Наша команда</h2>
             <ul class="pictures-team">
                 <li>
-                    <img src="./img/igor.png" alt="">
+                    <img
+                    srcset="
+                        ./img/igor-450.jpg 450w,
+                        ./img/igor-900.jpg 900w
+                        "
+                    src="./img/igor-450.jpg" alt=""
+                    >
                     <div class="team-card">
                         <h3 class="names">Игорь Демьяненко</h3>
                         <p class="profession">Product Designer</p>
@@ -142,7 +150,12 @@
                     </div>
                 </li>
                 <li>
-                    <img src="./img/olga.png" alt="">
+                    <img
+                    srcset="
+                    ./img/olga-450.jpg 450w,
+                    ./img/olga-900.jpg 900w
+                    "
+                    src="./img/olga.png" alt="">
                     <div class="team-card">
                         <h3 class="names">Ольга Репина</h3>
                         <p class="profession">Frontend Developer</p>
@@ -173,7 +186,12 @@
                 </li>
 
                 <li>
-                    <img src="./img/nick.png" alt="">
+                    <img
+                    srcset="
+                    ./img/nikolay-450.jpg 450w,
+                    ./img/nikolay-900.jpg 900w
+                    "
+                    src="./img/nick.png" alt="">
                     <div class="team-card">
                         <h3 class="names">Николай Тарасов</h3>
                         <p class="profession">Marketing</p>
@@ -204,13 +222,17 @@
 
                 </li>
                 <li>
-                    <img src="./img/michael.png" alt="">
+                    <img
+                    srcset="
+                    ./img/mihail-450.jpg 450w,
+                    ./img/mihail-900.jpg 900w
+                    "
+                    src="./img/michael.png" alt="">
                     <div class="team-card">
                         <h3 class="names">Михаил Ермаков</h3>
                         <p class="profession">UI Designer</p>
                         <ul class="team-icons">
                             <li>
-
                                 <svg class="icon-media">
                                     <use href="./icomoon/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
@@ -273,7 +295,7 @@
     </main>
     <footer class="footer">
         <div class="footer-item">
-            <div>
+            <div class="main-footer-info">
                 <a class="logo-link-footer" href="/">
                     <img src="./img/logo.png" alt="shouldbelogo">
                 </a>

@@ -1,0 +1,213 @@
+    .is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(117, 117, 117, 0.295);
+    }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 528px;
+        height: 581px;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .button-close-modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+        background: none;
+        position: absolute;
+        border: 1px solid grey;
+        border-radius: 50%;
+    }
+
+    .form-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 448px;
+        height: 501px;
+        background-color: white;
+        padding: 20px;
+    }
+
+    .form-modal p {
+        margin-bottom: 4px;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+
+    .form-label {
+        padding-bottom: 4px;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
+
+    .form-label div img {
+        width: 18px;
+        position: absolute;
+        height: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+
+    }
+
+    .input-div {
+        position: relative;
+        display: block;
+    }
+
+    .input-div input {
+        width: calc(100% - 42px);
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+        padding-left: 42px;
+    }
+
+    /* BUTTON-CLOSE-MODAL */
+    .button-close-modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+        background: none;
+        position: absolute;
+        border: 1px solid grey;
+        border-radius: 50%;
+    }
+
+    .img-modal-close {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* TEXTAREA */
+    .textarea {
+        width: 448px;
+        height: 120px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+        color: rgba(117, 117, 117, 0.50);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        resize: none;
+    }
+
+    .textarea textarea {
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        width: 416px;
+        height: 96px;
+        flex-shrink: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+    }
+
+    /* CHECKBOX */
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkbox-label .checkbox {
+        appearance: none;
+        position: absolute;
+    }
+
+    .checkbox-label .checkbox-icon {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #212121;
+        display: inline-block;
+        margin-right: 8px;
+        border-radius: 4px;
+    }
+
+    .checkbox-label .checkbox:checked+.checkbox-icon {
+        border-color: transparent;
+        background-color: #2196F3;
+        background-image: url('./icons_3/yes.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
+
+    .checkbox-text {
+        color: #757575;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 171.429% */
+        letter-spacing: 0.42px;
+    }
+
+    /* BUTTON */
+    .button {
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        color: #FFFFFF;
+        padding: 10px 32px;
+        margin: 30px auto 0;
+    }
+
+    .button {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+    }
